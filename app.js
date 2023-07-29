@@ -32,20 +32,21 @@ function appendMovies(name,release,ended,rating){
     let movieContainer = document.createElement("div")
     movieContainer.classList.add("movieContainer")
     let first = document.createElement("h3")
-    first.innerText = name
+    first.innerText = `Title: ${name}`
     let second = document.createElement("h3")
-    second.innerText = release
+    second.innerText = `Released: ${release}`
     let third = document.createElement("h3")
     if(ended == null){
-        third.innerText = "The Show is still On-Going"
+        third.innerText = `Ended: The Show is still On-Going`
     } else {
-    third.innerText = ended}
+    third.innerText = `Ended: ${ended}`
+   }
     let fourth = document.createElement("h3")
     if(rating == null){
-        fourth.innerText = "The show has no rating yet"
+        fourth.innerText = `Rating: The show has no rating yet`
         
     } else {
-    fourth.innerText = rating
+    fourth.innerText = `Rating: ${rating}`
 }
     resContainer.append(movieContainer)
     movieContainer.append(first)
