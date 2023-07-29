@@ -1,0 +1,63 @@
+*{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body,html{
+    height: 95%;
+    background: #749BC2;
+}
+
+
+#searchForm {
+    border: 5px solid black;
+    border-radius: 15px;
+text-align: center;
+width: fit-content;
+margin: auto;
+padding: 20px;
+}
+
+#banner{
+    margin-top: 0;
+}
+
+
+
+#moviesResults {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 30px;
+    
+}
+
+.movie{
+    border: 5px solid black;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 20px;
+    margin: auto;
+    margin-top: 30px;
+    display: none;
+}
+
+#movieName {
+    margin-top: 0;
+}
+
+#rating {
+    margin-bottom: 0;
+}
+
+.forAll {
+    text-align: center;
+}
+
+.movieContainer {
+    border: 5px solid black;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 20px;
+    margin: auto;
+    margin-top: 30px;
+text-align: center;}

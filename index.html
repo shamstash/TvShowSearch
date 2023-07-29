@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tv Shows Seatch</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='style.css'>
+    
+</head>
+<body>
+        
+        <form action="" id="searchForm">
+            <h1 id="banner">Tv Shows Search By Title</h1>
+            <input type="text" placeholder="Enter Tv Show Title" id="inputfield">
+            <button type="submit">Search</button>
+            <button type="button" id="removeMovies">Delete Movies</button>
+        </form>
+
+<section id="moviesResults">
+<div class="movie">
+    <h2 class="forAll" id="movieName"></h2>
+    <h3 class="forAll" id="release"></h3>
+    <h3 class="forAll" id="ended"></h3>
+    <h3 class="forAll" id="rating"></h3>
+</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
