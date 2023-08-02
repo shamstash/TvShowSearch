@@ -24,13 +24,15 @@ removeMoviesBtn.addEventListener("click", () => removeMovies())
 
 const getShowInfo = async(showTitle) => {
     const res = await axios.get(`https://api.tvmaze.com/search/shows?q=${showTitle}`)
-    res.data.forEach(e => appendMovies(e.show.name,e.show.premiered,e.show.ended, e.show.rating.average ))
+    res.data.forEach(e => appendMovies(e.show.name,e.show.premiered,e.show.ended, e.show.rating.average, e.show.image.medium ))
     //appendMovies(res.data.name,res.data.premiered,res.data.ended, res.data.rating.average )
     }
 
-function appendMovies(name,release,ended,rating){
+function appendMovies(name,release,ended,rating, pic){
     let movieContainer = document.createElement("div")
     movieContainer.classList.add("movieContainer")
+    let img = document.createElement("IMG")
+    img.src = pic
     let first = document.createElement("h3")
     first.innerText = `Title: ${name}`
     let second = document.createElement("h3")
