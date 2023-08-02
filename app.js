@@ -51,6 +51,7 @@ function appendMovies(name,release,ended,rating, pic){
     fourth.innerText = `Rating: ${rating}`
 }
     resContainer.append(movieContainer)
+    movieContainer.append(img)
     movieContainer.append(first)
     movieContainer.append(second)
     movieContainer.append(third)
